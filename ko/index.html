@@ -1,130 +1,170 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2823448429732547"
-     crossorigin="anonymous"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2823448429732547" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="한국 여행을 위한 최고의 가이드. 맛집, 명소, 역사, 문화 체험 등 현지인이 추천하는 생생한 정보를 확인하세요.">
     <meta name="google-adsense-account" content="ca-pub-2823448429732547">
-    <title>한국 방문</title>
+    <title>한국 방문 - 당신의 완벽한 여행 가이드</title>
+    
+    <!-- Open Graph for Social Sharing -->
+    <meta property="og:title" content="한국 방문 - 당신의 완벽한 여행 가이드">
+    <meta property="og:description" content="한국의 숨겨진 명소와 맛집을 발견하세요.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1548115184-bc6544d06a58?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80">
+    <meta property="og:type" content="website">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&family=Noto+Sans+JP:wght@400;700&family=Noto+Sans+SC:wght@400;700&family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2823448429732547" crossorigin="anonymous"></script>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
             <div class="container">
-                <a class="navbar-brand" href="../index.html">Korea Visit</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <a class="navbar-brand fw-bold" href="./index.html"><i class="bi bi-airplane-fill me-2"></i>Korea Visit</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="./index.html">한국어</a>
+                        <li class="nav-item"><a class="nav-link active" href="./index.html">홈</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="catDropdown" role="button" data-bs-toggle="dropdown">여행 정보</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./basics.html"><i class="bi bi-info-circle me-2"></i>기본 정보</a></li>
+                                <li><a class="dropdown-item" href="./food.html"><i class="bi bi-egg-fried me-2"></i>음식</a></li>
+                                <li><a class="dropdown-item" href="./attractions.html"><i class="bi bi-camera me-2"></i>명소</a></li>
+                                <li><a class="dropdown-item" href="./cities.html"><i class="bi bi-buildings me-2"></i>도시</a></li>
+                                <li><a class="dropdown-item" href="./history.html"><i class="bi bi-book me-2"></i>역사</a></li>
+                                <li><a class="dropdown-item" href="./scenery.html"><i class="bi bi-flower1 me-2"></i>풍경</a></li>
+                            </ul>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../index.html">English</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../ja/index.html">日本語</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../zh/index.html">中文</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./contact.html">문의하기</a>
+                        <li class="nav-item"><a class="nav-link" href="./about.html">소개</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./contact.html">문의하기</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="langDropdown" role="button" data-bs-toggle="dropdown">한국어</a>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><a class="dropdown-item active" href="#">한국어</a></li>
+                                <li><a class="dropdown-item" href="../index.html">English</a></li>
+                                <li><a class="dropdown-item" href="../ja/index.html">日本語</a></li>
+                                <li><a class="dropdown-item" href="../zh/index.html">中文</a></li>
+                            </ul>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <div class="hero-section text-center text-white py-5" style="background: url('https://images.unsplash.com/photo-1575231904797-40899066601b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80') no-repeat center center; background-size: cover;">
+        
+        <!-- Updated Hero Image: High quality view of Seoul/Palace -->
+        <div class="hero-section text-center text-white" style="background-image: url('https://images.unsplash.com/photo-1548115184-bc6544d06a58?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');">
             <div class="container">
-                <h1 class="display-4 hero-title">한국 방문</h1>
-                <p class="lead hero-subtitle">잊을 수 없는 경험을 위한 당신의 가이드</p>
+                <h1 class="hero-title text-white">당신의 한국 여행,<br>여기서 시작됩니다</h1>
+                <p class="lead hero-subtitle fs-4 text-white">현지인이 전하는 진짜 한국 이야기와 숨겨진 명소를 발견하세요.</p>
+                <div class="mt-4">
+                    <a href="./basics.html" class="btn btn-primary btn-lg px-4 me-2">여행 준비하기</a>
+                    <a href="./food.html" class="btn btn-outline-light btn-lg px-4">맛집 탐방</a>
+                </div>
             </div>
         </div>
     </header>
 
-    <main class="container my-5">
-        <section class="row">
+    <main class="container">
+        <!-- Introduction Section -->
+        <section class="row py-5">
             <div class="col-lg-8 mx-auto text-center">
-                <h2 class="mb-4">당신의 진정한 한국 여행, 여기서 시작하세요</h2>
-                <p class="lead">환영합니다! 이곳은 단순한 여행 정보 사이트가 아닙니다. 저희는 활기찬 도시의 풍경부터 고요한 자연까지, 한국의 진정한 매력을 발견할 수 있도록 돕는 당신의 개인 가이드입니다. 저희의 목표는 일반적인 관광지를 넘어선 독창적이고 수준 높은 정보를 제공하는 것입니다.</p>
-                <p>2년간 에어비앤비에서 전 세계 여행객들을 맞이한 경험을 포함하여, 다년간의 현지 경험을 바탕으로 잊지 못할 여행을 계획할 수 있도록 진솔한 조언과 엄선된 콘텐츠를 제공합니다. 최고의 현지 맛집을 탐방하고 싶은 미식가, 숨겨진 이야기를 찾아내고 싶은 역사 애호가, 또는 최신 트렌드를 쫓는 K-Pop 팬이라면, 제대로 찾아오셨습니다. 당신의 꿈의 한국 여행을 함께 만들어가요.</p>
+                <span class="badge bg-primary mb-2">Welcome</span>
+                <h2 class="mb-4 fw-bold">가장 한국적인 순간을 만나보세요</h2>
+                <p class="lead text-muted">인터넷에 널린 뻔한 정보가 아닙니다. 저희는 한국의 깊이 있는 역사부터 최신 트렌드, 그리고 현지인들만 아는 맛집 골목까지 생생하게 전달합니다. 여러분의 여행이 단순한 '방문'이 아닌 잊지 못할 '추억'이 되도록 돕겠습니다.</p>
             </div>
         </section>
 
-        <section class="mt-5 text-center">
-            <h2 class="mb-4">한국 방문을 위한 이유</h2>
+        <!-- Categories Section -->
+        <section class="mb-5">
+            <h3 class="text-center mb-5 fw-bold">여행 테마별 가이드</h3>
             <div class="row g-4">
                 <div class="col-md-3">
-                    <div class="p-3 border bg-light h-100">
-                        <i class="bi bi-egg-fried fs-1 text-primary"></i>
-                        <h5 class="mt-3">맛있는 요리</h5>
-                        <p>한국 요리의 독특한 맛을 즐겨보세요.</p>
-                    </div>
+                    <a href="./food.html" class="text-decoration-none text-dark">
+                        <div class="card h-100 text-center py-4 px-3 border-0 bg-light">
+                            <div class="mb-3 text-primary"><i class="bi bi-egg-fried" style="font-size: 3rem;"></i></div>
+                            <h5 class="fw-bold">미식 여행</h5>
+                            <p class="text-muted small">김치부터 길거리 음식까지, 한국의 맛을 탐험하세요.</p>
+                        </div>
+                    </a>
                 </div>
                 <div class="col-md-3">
-                    <div class="p-3 border bg-light h-100">
-                        <i class="bi bi-bank fs-1 text-success"></i>
-                        <h5 class="mt-3">풍부한 역사</h5>
-                        <p>고궁과 전통 마을을 탐험하세요.</p>
-                    </div>
+                    <a href="./history.html" class="text-decoration-none text-dark">
+                        <div class="card h-100 text-center py-4 px-3 border-0 bg-light">
+                            <div class="mb-3 text-success"><i class="bi bi-bank" style="font-size: 3rem;"></i></div>
+                            <h5 class="fw-bold">역사 산책</h5>
+                            <p class="text-muted small">천년의 시간을 간직한 고궁과 문화유산을 만납니다.</p>
+                        </div>
+                    </a>
                 </div>
                 <div class="col-md-3">
-                    <div class="p-3 border bg-light h-100">
-                        <i class="bi bi-building fs-1 text-danger"></i>
-                        <h5 class="mt-3">활기찬 도시</h5>
-                        <p>서울과 부산의 역동적인 에너지를 경험하세요.</p>
-                    </div>
+                    <a href="./cities.html" class="text-decoration-none text-dark">
+                        <div class="card h-100 text-center py-4 px-3 border-0 bg-light">
+                            <div class="mb-3 text-danger"><i class="bi bi-building" style="font-size: 3rem;"></i></div>
+                            <h5 class="fw-bold">도시 탐방</h5>
+                            <p class="text-muted small">잠들지 않는 도시 서울과 부산의 에너지를 느껴보세요.</p>
+                        </div>
+                    </a>
                 </div>
                 <div class="col-md-3">
-                    <div class="p-3 border bg-light h-100">
-                        <i class="bi bi-flower1 fs-1 text-info"></i>
-                        <h5 class="mt-3">아름다운 풍경</h5>
-                        <p>그림 같은 산과 해안 경치를 발견하세요.</p>
-                    </div>
+                    <a href="./scenery.html" class="text-decoration-none text-dark">
+                        <div class="card h-100 text-center py-4 px-3 border-0 bg-light">
+                            <div class="mb-3 text-info"><i class="bi bi-flower1" style="font-size: 3rem;"></i></div>
+                            <h5 class="fw-bold">자연 힐링</h5>
+                            <p class="text-muted small">제주도의 바다와 설악산의 단풍을 즐겨보세요.</p>
+                        </div>
+                    </a>
                 </div>
             </div>
         </section>
 
-        <section class="mt-5">
-            <h2 class="text-center mb-4">최신 트렌드 & 업데이트</h2>
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        <!-- Featured Articles (Previously Latest Trends) -->
+        <section class="py-5">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h3 class="fw-bold m-0">🔥 지금 뜨는 한국 여행 트렌드</h3>
+                <a href="#" class="btn btn-sm btn-outline-secondary">더 보기</a>
+            </div>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
                 <div class="col">
                     <div class="card h-100">
-                        <img src="https://via.placeholder.com/400x200?text=K-Pop+Concert" class="card-img-top" alt="K-Pop Concert">
+                        <!-- Replaced placeholder with K-pop concert crowd image -->
+                        <img src="https://images.unsplash.com/photo-1459749411177-0473ef485097?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="K-Pop Concert">
                         <div class="card-body">
-                            <h5 class="card-title">K-Pop 콘서트 정보</h5>
-                            <p class="card-text">다가오는 K-Pop 콘서트 일정과 티켓 예매 정보를 확인하세요. 최신 K-Pop 트렌드를 경험할 기회!</p>
-                            <a href="#" class="btn btn-primary">더 보기</a>
+                            <span class="badge bg-danger mb-2">Entertainment</span>
+                            <h5 class="card-title fw-bold">2026 K-Pop 콘서트 가이드</h5>
+                            <p class="card-text text-muted">좋아하는 아이돌을 눈앞에서! 티켓 예매 꿀팁부터 공연장 주변 즐길 거리까지 완벽 정리.</p>
+                            <a href="#" class="stretched-link"></a>
                         </div>
                     </div>
                 </div>
                 <div class="col">
                     <div class="card h-100">
-                        <img src="https://via.placeholder.com/400x200?text=Traditional+Market" class="card-img-top" alt="Traditional Market">
+                        <!-- Replaced placeholder with Traditional Market food image -->
+                        <img src="https://images.unsplash.com/photo-1580651315530-69c8e0026377?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Traditional Market">
                         <div class="card-body">
-                            <h5 class="card-title">한국 전통 시장 탐방</h5>
-                            <p class="card-text">생동감 넘치는 한국 전통 시장에서 현지 문화를 체험하고 맛있는 길거리 음식을 맛보세요.</p>
-                            <a href="#" class="btn btn-primary">더 보기</a>
+                            <span class="badge bg-warning text-dark mb-2">Food & Culture</span>
+                            <h5 class="card-title fw-bold">광장시장의 숨은 맛집들</h5>
+                            <p class="card-text text-muted">빈대떡, 육회, 마약김밥... 현지인들이 줄 서서 먹는 진짜 맛집 리스트를 공개합니다.</p>
+                            <a href="#" class="stretched-link"></a>
                         </div>
                     </div>
                 </div>
                 <div class="col">
                     <div class="card h-100">
-                        <img src="https://via.placeholder.com/400x200?text=New+Cafe" class="card-img-top" alt="New Cafe">
+                        <!-- Replaced placeholder with Trendy Cafe image -->
+                        <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Cafe Street">
                         <div class="card-body">
-                            <h5 class="card-title">최신 유행 카페 거리</h5>
-                            <p class="card-text">서울의 새로운 핫플레이스! 독특한 분위기와 특별한 메뉴를 자랑하는 카페들을 소개합니다.</p>
-                            <a href="#" class="btn btn-primary">더 보기</a>
+                            <span class="badge bg-info text-dark mb-2">Lifestyle</span>
+                            <h5 class="card-title fw-bold">서울의 힙한 카페 거리 TOP 3</h5>
+                            <p class="card-text text-muted">성수동, 연남동, 한남동. 인스타 감성 가득한 카페와 디저트 투어 코스 추천.</p>
+                            <a href="#" class="stretched-link"></a>
                         </div>
                     </div>
                 </div>
@@ -132,19 +172,32 @@
         </section>
     </main>
 
-    <footer class="bg-dark text-white text-center py-3 mt-5">
+    <footer>
         <div class="container">
-            <p class="mb-0">&copy; 2026 Korea Visit</p>
-            <div class="social-icons mt-3">
-                <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
-                <a href="#" class="text-white me-3"><i class="bi bi-twitter"></i></a>
-                <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
-                <a href="#" class="text-white"><i class="bi bi-youtube"></i></a>
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <h5 class="text-white mb-3">Korea Visit</h5>
+                    <p class="small">한국 여행의 모든 것, 저희와 함께하세요.<br>
+                    본 사이트는 방문객에게 유용한 정보를 제공하기 위해 운영됩니다.</p>
+                    <p class="small">&copy; 2026 Korea Visit. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <div class="mb-3">
+                        <a href="./about.html" class="me-3">소개</a>
+                        <a href="./contact.html" class="me-3">문의하기</a>
+                        <a href="./privacy.html">개인정보처리방침</a>
+                    </div>
+                    <div class="social-icons">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
     <script src="../js/script.js"></script>
 </body>
 </html>

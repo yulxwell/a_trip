@@ -1,130 +1,167 @@
 <!DOCTYPE html>
 <html lang="zh">
 <head>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2823448429732547"
-     crossorigin="anonymous"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2823448429732547" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="韩国旅游终极指南。发现当地人推荐的美食、热门景点、历史和文化体验。">
     <meta name="google-adsense-account" content="ca-pub-2823448429732547">
-    <title>韩国访问</title>
+    <title>韩国访问 - 您的完美旅行指南</title>
+    
+    <!-- Open Graph for Social Sharing -->
+    <meta property="og:title" content="韩国访问 - 您的完美旅行指南">
+    <meta property="og:description" content="发现韩国的隐秘景点和地道美食。">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1548115184-bc6544d06a58?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80">
+    <meta property="og:type" content="website">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&family=Noto+Sans+JP:wght@400;700&family=Noto+Sans+SC:wght@400;700&family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2823448429732547" crossorigin="anonymous"></script>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
             <div class="container">
-                <a class="navbar-brand" href="../index.html">Korea Visit</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <a class="navbar-brand fw-bold" href="./index.html"><i class="bi bi-airplane-fill me-2"></i>Korea Visit</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="../ko/index.html">한국어</a>
+                        <li class="nav-item"><a class="nav-link active" href="./index.html">主页</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="catDropdown" role="button" data-bs-toggle="dropdown">旅游信息</a>
+                            <ul class="dropdown-menu">
+                                <!-- Chinese basics page not yet created -->
+                                <li><a class="dropdown-item" href="./food.html"><i class="bi bi-egg-fried me-2"></i>美食</a></li>
+                                <li><a class="dropdown-item" href="./attractions.html"><i class="bi bi-camera me-2"></i>景点</a></li>
+                                <li><a class="dropdown-item" href="./cities.html"><i class="bi bi-buildings me-2"></i>城市</a></li>
+                                <li><a class="dropdown-item" href="./history.html"><i class="bi bi-book me-2"></i>历史</a></li>
+                                <li><a class="dropdown-item" href="./scenery.html"><i class="bi bi-flower1 me-2"></i>风景</a></li>
+                            </ul>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../index.html">English</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../ja/index.html">日本語</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="./index.html">中文</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./contact.html">联系我们</a>
+                        <li class="nav-item"><a class="nav-link" href="./about.html">介绍</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./contact.html">联系我们</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="langDropdown" role="button" data-bs-toggle="dropdown">中文</a>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><a class="dropdown-item" href="../ko/index.html">한국어</a></li>
+                                <li><a class="dropdown-item" href="../index.html">English</a></li>
+                                <li><a class="dropdown-item" href="../ja/index.html">日本語</a></li>
+                                <li><a class="dropdown-item active" href="#">中文</a></li>
+                            </ul>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <div class="hero-section text-center text-white py-5" style="background: url('https://images.unsplash.com/photo-1575231904797-40899066601b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80') no-repeat center center; background-size: cover;">
+        
+        <!-- Hero Image -->
+        <div class="hero-section text-center text-white" style="background-image: url('https://images.unsplash.com/photo-1548115184-bc6544d06a58?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');">
             <div class="container">
-                <h1 class="display-4 hero-title">韩国访问</h1>
-                <p class="lead hero-subtitle">您难忘经历的向导</p>
+                <h1 class="hero-title text-white">您的韩国之旅，<br>从这里开始</h1>
+                <p class="lead hero-subtitle fs-4 text-white">发现当地人讲述的真实韩国故事和隐秘景点。</p>
+                <div class="mt-4">
+                    <a href="./food.html" class="btn btn-primary btn-lg px-4 me-2">准备旅行</a>
+                    <a href="./attractions.html" class="btn btn-outline-light btn-lg px-4">探索地点</a>
+                </div>
             </div>
         </div>
     </header>
 
-    <main class="container my-5">
-        <section class="row">
+    <main class="container">
+        <!-- Introduction Section -->
+        <section class="row py-5">
             <div class="col-lg-8 mx-auto text-center">
-                <h2 class="mb-4">您的真实韩国之旅，从这里开始</h2>
-                <p class="lead">欢迎！这里不仅仅是一个旅行信息网站。我们是您的个人向导，帮助您发现韩国的真正魅力，从繁华的城市景观到宁静的自然风光。我们的目标是为您提供超越常规旅游景点的独特、高质量信息。</p>
-                <p>凭借多年的本地经验，包括两年在爱彼迎上接待国际客人的经验，我们提供真诚的建议和精选内容，帮助您规划一次难忘的旅行。无论您是渴望探索最佳本地餐厅的美食家，希望揭开隐藏故事的历史爱好者，还是寻找最新潮流的K-Pop粉丝，您都来对地方了。让我们一起打造您梦想中的韩国之旅。</p>
+                <span class="badge bg-primary mb-2">Welcome</span>
+                <h2 class="mb-4 fw-bold">遇见最真实的韩国</h2>
+                <p class="lead text-muted">这不是互联网上随处可见的普通信息。我们生动地为您讲述从韩国深厚的历史到最新潮流，以及只有当地人才知道的美食胡同。我们将帮助您的旅行不仅仅是一次“访问”，而是一段难忘的“回忆”。</p>
             </div>
         </section>
 
-        <section class="mt-5 text-center">
-            <h2 class="mb-4">咨询当地人！</h2>
+        <!-- Categories Section -->
+        <section class="mb-5">
+            <h3 class="text-center mb-5 fw-bold">主题旅游指南</h3>
             <div class="row g-4">
                 <div class="col-md-3">
-                    <div class="p-3 border bg-light h-100">
-                        <i class="bi bi-egg-fried fs-1 text-primary"></i>
-                        <h5 class="mt-3">美味佳肴</h5>
-                        <p>品尝韩国菜的独特风味。</p>
-                    </div>
+                    <a href="./food.html" class="text-decoration-none text-dark">
+                        <div class="card h-100 text-center py-4 px-3 border-0 bg-light">
+                            <div class="mb-3 text-primary"><i class="bi bi-egg-fried" style="font-size: 3rem;"></i></div>
+                            <h5 class="fw-bold">美食之旅</h5>
+                            <p class="text-muted small">探索从泡菜到街头小吃的韩国风味。</p>
+                        </div>
+                    </a>
                 </div>
                 <div class="col-md-3">
-                    <div class="p-3 border bg-light h-100">
-                        <i class="bi bi-bank fs-1 text-success"></i>
-                        <h5 class="mt-3">历史悠久</h5>
-                        <p>探索古老的宫殿和传统村庄。</p>
-                    </div>
+                    <a href="./history.html" class="text-decoration-none text-dark">
+                        <div class="card h-100 text-center py-4 px-3 border-0 bg-light">
+                            <div class="mb-3 text-success"><i class="bi bi-bank" style="font-size: 3rem;"></i></div>
+                            <h5 class="fw-bold">历史漫步</h5>
+                            <p class="text-muted small">遇见跨越千年的古宫和文化遗产。</p>
+                        </div>
+                    </a>
                 </div>
                 <div class="col-md-3">
-                    <div class="p-3 border bg-light h-100">
-                        <i class="bi bi-building fs-1 text-danger"></i>
-                        <h5 class="mt-3">活力四射的城市</h5>
-                        <p>体验首尔和釜山的活力。</p>
-                    </div>
+                    <a href="./cities.html" class="text-decoration-none text-dark">
+                        <div class="card h-100 text-center py-4 px-3 border-0 bg-light">
+                            <div class="mb-3 text-danger"><i class="bi bi-building" style="font-size: 3rem;"></i></div>
+                            <h5 class="fw-bold">城市探索</h5>
+                            <p class="text-muted small">感受首尔和釜山等不夜城的活力。</p>
+                        </div>
+                    </a>
                 </div>
                 <div class="col-md-3">
-                    <div class="p-3 border bg-light h-100">
-                        <i class="bi bi-flower1 fs-1 text-info"></i>
-                        <h5 class="mt-3">美丽的风景</h5>
-                        <p>发现风景如画的山脉和海岸线。</p>
-                    </div>
+                    <a href="./scenery.html" class="text-decoration-none text-dark">
+                        <div class="card h-100 text-center py-4 px-3 border-0 bg-light">
+                            <div class="mb-3 text-info"><i class="bi bi-flower1" style="font-size: 3rem;"></i></div>
+                            <h5 class="fw-bold">自然治愈</h5>
+                            <p class="text-muted small">享受济州岛的大海和雪岳山的枫叶。</p>
+                        </div>
+                    </a>
                 </div>
             </div>
         </section>
 
-        <section class="mt-5">
-            <h2 class="text-center mb-4">最新趋势与更新</h2>
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        <!-- Featured Articles -->
+        <section class="py-5">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h3 class="fw-bold m-0">🔥 韩国旅游热门趋势</h3>
+                <a href="#" class="btn btn-sm btn-outline-secondary">查看更多</a>
+            </div>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
                 <div class="col">
                     <div class="card h-100">
-                        <img src="https://via.placeholder.com/400x200?text=K-Pop+Concert" class="card-img-top" alt="K-Pop Concert">
+                        <img src="https://images.unsplash.com/photo-1459749411177-0473ef485097?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="K-Pop Concert">
                         <div class="card-body">
-                            <h5 class="card-title">K-Pop演唱会信息</h5>
-                            <p class="card-text">查看即将举行的K-Pop演唱会日程和票务预订详情。体验最新K-Pop潮流的机会！</p>
-                            <a href="#" class="btn btn-primary">了解更多</a>
+                            <span class="badge bg-danger mb-2">Entertainment</span>
+                            <h5 class="card-title fw-bold">2026 K-Pop 演唱会指南</h5>
+                            <p class="card-text text-muted">亲眼见到您最喜欢的偶像！关于订票和场馆周边活动的提示。</p>
+                            <a href="#" class="stretched-link"></a>
                         </div>
                     </div>
                 </div>
                 <div class="col">
                     <div class="card h-100">
-                        <img src="https://via.placeholder.com/400x200?text=Traditional+Market" class="card-img-top" alt="Traditional Market">
+                        <img src="https://images.unsplash.com/photo-1580651315530-69c8e0026377?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Traditional Market">
                         <div class="card-body">
-                            <h5 class="card-title">探索韩国传统市场</h5>
-                            <p class="card-text">在充满活力的韩国传统市场体验当地文化，品尝美味街头小吃。</p>
-                            <a href="#" class="btn btn-primary">了解更多</a>
+                            <span class="badge bg-warning text-dark mb-2">Food & Culture</span>
+                            <h5 class="card-title fw-bold">广藏市场的隐秘美食</h5>
+                            <p class="card-text text-muted">绿豆煎饼、生拌牛肉、麻药紫菜包饭... 公开当地人排队品尝的真正美食清单。</p>
+                            <a href="#" class="stretched-link"></a>
                         </div>
                     </div>
                 </div>
                 <div class="col">
                     <div class="card h-100">
-                        <img src="https://via.placeholder.com/400x200?text=New+Cafe" class="card-img-top" alt="New Cafe">
+                        <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Cafe Street">
                         <div class="card-body">
-                            <h5 class="card-title">时尚咖啡街</h5>
-                            <p class="card-text">首尔新潮热点！介绍拥有独特氛围和特色菜单的咖啡馆。</p>
-                            <a href="#" class="btn btn-primary">了解更多</a>
+                            <span class="badge bg-info text-dark mb-2">Lifestyle</span>
+                            <h5 class="card-title fw-bold">首尔三大时尚咖啡街</h5>
+                            <p class="card-text text-muted">圣水洞、延南洞、汉南洞。充满Instagram氛围的推荐咖啡和甜点之旅路线。</p>
+                            <a href="#" class="stretched-link"></a>
                         </div>
                     </div>
                 </div>
@@ -132,19 +169,32 @@
         </section>
     </main>
 
-    <footer class="bg-dark text-white text-center py-3 mt-5">
+    <footer>
         <div class="container">
-            <p class="mb-0">&copy; 2026 Korea Visit</p>
-            <div class="social-icons mt-3">
-                <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
-                <a href="#" class="text-white me-3"><i class="bi bi-twitter"></i></a>
-                <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
-                <a href="#" class="text-white"><i class="bi bi-youtube"></i></a>
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <h5 class="text-white mb-3">Korea Visit</h5>
+                    <p class="small">关于韩国旅行的一切，加入我们。<br>
+                    本网站旨在为访问者提供有用的信息。</p>
+                    <p class="small">&copy; 2026 Korea Visit. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <div class="mb-3">
+                        <a href="./about.html" class="me-3">介绍</a>
+                        <a href="./contact.html" class="me-3">联系我们</a>
+                        <a href="./privacy.html">隐私政策</a>
+                    </div>
+                    <div class="social-icons">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
     <script src="../js/script.js"></script>
 </body>
 </html>

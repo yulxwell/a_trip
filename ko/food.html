@@ -4,50 +4,45 @@
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2823448429732547" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="한국 여행의 하이라이트, 한식 가이드. 김치, 코리안 바비큐, 비빔밥 등 꼭 먹어봐야 할 음식과 맛있게 즐기는 팁을 소개합니다.">
     <meta name="google-adsense-account" content="ca-pub-2823448429732547">
-    <title>한국 음식 - 한국 방문</title>
+    <title>한국 음식 가이드 - 최고의 미식 여행</title>
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&family=Noto+Sans+JP:wght@400;700&family=Noto+Sans+SC:wght@400;700&family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2823448429732547" crossorigin="anonymous"></script>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
             <div class="container">
-                <a class="navbar-brand" href="../index.html">Korea Visit</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <a class="navbar-brand fw-bold" href="./index.html"><i class="bi bi-airplane-fill me-2"></i>Korea Visit</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="./index.html">홈</a>
-                        </li>
+                        <li class="nav-item"><a class="nav-link" href="./index.html">홈</a></li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle active" href="#" id="categoriesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                카테고리
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="categoriesDropdown">
-                                <li><a class="dropdown-item active" href="./food.html">음식</a></li>
-                                <li><a class="dropdown-item" href="./attractions.html">명소</a></li>
+                            <a class="nav-link dropdown-toggle active" href="#" id="catDropdown" role="button" data-bs-toggle="dropdown">여행 정보</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./basics.html"><i class="bi bi-info-circle me-2"></i>기본 정보</a></li>
+                                <li><a class="dropdown-item active" href="./food.html"><i class="bi bi-egg-fried me-2"></i>음식</a></li>
+                                <li><a class="dropdown-item" href="./attractions.html"><i class="bi bi-camera me-2"></i>명소</a></li>
+                                <li><a class="dropdown-item" href="./cities.html"><i class="bi bi-buildings me-2"></i>도시</a></li>
+                                <li><a class="dropdown-item" href="./history.html"><i class="bi bi-book me-2"></i>역사</a></li>
+                                <li><a class="dropdown-item" href="./scenery.html"><i class="bi bi-flower1 me-2"></i>풍경</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./about.html">소개</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./contact.html">문의하기</a>
-                        </li>
+                        <li class="nav-item"><a class="nav-link" href="./about.html">소개</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./contact.html">문의하기</a></li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                한국어
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="languageDropdown">
-                                <li><a class="dropdown-item active" href="./index.html">한국어</a></li>
+                            <a class="nav-link dropdown-toggle" href="#" id="langDropdown" role="button" data-bs-toggle="dropdown">한국어</a>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><a class="dropdown-item active" href="#">한국어</a></li>
                                 <li><a class="dropdown-item" href="../index.html">English</a></li>
                                 <li><a class="dropdown-item" href="../ja/index.html">日本語</a></li>
                                 <li><a class="dropdown-item" href="../zh/index.html">中文</a></li>
@@ -57,47 +52,121 @@
                 </div>
             </div>
         </nav>
+        
+        <!-- Food Hero -->
+        <div class="hero-section text-center text-white" style="background-image: url('https://images.unsplash.com/photo-1553163147-62195751a9f7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80'); height: 400px; min-height: 400px;">
+            <div class="container">
+                <h1 class="hero-title">한국의 맛을 찾아서</h1>
+                <p class="lead hero-subtitle">전통과 현대가 어우러진 최고의 미식 경험</p>
+            </div>
+        </div>
     </header>
 
-    <main class="container my-5">
-        <section class="row">
-            <div class="col-lg-10 mx-auto">
-                <h1 class="text-center mb-4">한국에서의 미식 여행</h1>
-                <p class="lead text-center">한식은 그 자체로 활기차고 풍미 가득한 세계입니다. 강렬한 맛, 발효 식품의 광범위한 사용, 그리고 나라의 계절과 역사와의 깊은 연관성이 특징입니다. 고추장의 매콤함부터 된장의 구수한 깊은 맛까지, 각 요리는 이야기를 담고 있습니다. 이 가이드는 한국에서 여러분을 기다리는 꼭 먹어봐야 할 요리와 미식 경험을 소개합니다.</p>
+    <main class="container">
+        <section class="row py-5">
+            <div class="col-lg-8 mx-auto">
+                <p class="lead text-center mb-5">
+                    한국 여행에서 '식도락'은 빼놓을 수 없는 즐거움입니다. 
+                    단순히 배를 채우는 것이 아니라, 5천 년의 역사와 계절의 변화, 그리고 한국인들의 정(情)을 느끼는 과정입니다. 
+                    처음 방문하는 분들을 위해 절대 실패하지 않을 대표 메뉴 3가지를 깊이 있게 소개합니다.
+                </p>
 
-                <hr class="my-5">
-
-                <article class="mb-5">
-                    <h2 class="mb-3">김치: 한국 음식의 영혼</h2>
-                    <p>김치 없이는 한국 음식을 논할 수 없습니다. 주로 배추로 만드는 이 발효 채소 요리는 모든 한국 식사의 필수적인 부분입니다. 맵고, 시큼하며, 감칠맛이 풍부할 뿐만 아니라, 프로바이오틱스의 풍부한 공급원이기도 합니다. 각각 독특한 맛과 지역적 특색을 지닌 수백 가지 종류의 김치가 있습니다. 클래식한 배추김치부터 깍두기, 오이소박이까지 다양한 종류를 맛보는 것을 두려워하지 마세요.</p>
+                <!-- Article 1: Kimchi -->
+                <article id="kimchi">
+                    <h2>1. 김치 (Kimchi): 한국의 영혼</h2>
+                    <img src="https://images.unsplash.com/photo-1583224964978-2257b96070d4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80" alt="다양한 종류의 김치">
+                    <p>
+                        김치는 단순한 반찬이 아닙니다. 한국인의 밥상에서 한 번도 빠지지 않는 소울 푸드이자, 유네스코 인류무형문화유산으로 등재된 김장 문화의 결정체입니다. 
+                        배추나 무를 소금에 절인 뒤 고춧가루, 마늘, 생강, 젓갈 등으로 만든 양념에 버무려 발효시킵니다. 
+                        이 과정에서 생성되는 유산균은 장 건강에 탁월한 효과를 줍니다.
+                    </p>
+                    <p>
+                        지역마다, 계절마다 종류가 다르며 그 수만 200가지가 넘습니다. 가장 대표적인 '배추김치', 아삭한 무로 만든 '깍두기', 여름철 시원하게 먹는 '열무김치' 등을 꼭 맛보세요.
+                    </p>
+                    
+                    <div class="pro-tip-box">
+                        <span class="pro-tip-title"><i class="bi bi-lightbulb-fill"></i> 현지인 팁: 김치 더 맛있게 즐기기</span>
+                        <p class="mb-0">
+                            식당에서 김치는 <strong>무한 리필</strong>됩니다. 부족하면 "김치 좀 더 주세요"라고 말씀하세요. 
+                            또한, 신 김치(오래 발효된 김치)는 구워 먹거나 찌개에 넣으면 감칠맛이 폭발합니다. 삼겹살을 먹을 때 불판 아래쪽에 김치를 올려 구워 드셔보세요!
+                        </p>
+                    </div>
                 </article>
 
-                <article class="mb-5">
-                    <h2 class="mb-3">한국식 바비큐: 사교적인 축제</h2>
-                    <p>한국식 바비큐는 단순한 식사 이상으로, 공동체적인 경험입니다. 그룹이 테이블에 설치된 그릴 주위에 모여 갈비(양념 소갈비)나 삼겹살(돼지 뱃살)과 같은 다양한 종류의 양념 및 비양념 고기를 구워 먹습니다. 구운 고기는 종종 상추나 깻잎에 쌈장(매콤한 디핑 소스)과 다양한 반찬과 함께 싸서 먹습니다. 친구나 가족과 함께 식사를 즐기는 시끄럽고, 재미있고, 맛있는 방법입니다.</p>
+                <!-- Article 2: Korean BBQ -->
+                <article id="bbq">
+                    <h2>2. 코리안 바비큐 (Korean BBQ): 함께하는 즐거움</h2>
+                    <img src="https://images.unsplash.com/photo-1594834749740-74b3f6764be4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80" alt="지글지글 구워지는 삼겹살">
+                    <p>
+                        전 세계적으로 사랑받는 'K-BBQ'는 단순한 식사가 아닌 하나의 엔터테인먼트입니다. 
+                        테이블 중앙의 불판에서 직접 고기를 구우며 대화를 나누는 문화입니다. 
+                        대표적인 메뉴는 돼지고기 뱃살 부위인 '삼겹살'과 달콤 짭짤한 양념에 재운 소갈비인 '갈비'가 있습니다.
+                    </p>
+                    <p>
+                        고기를 굽는 소리, 고소한 냄새, 그리고 함께 곁들이는 다양한 반찬들이 오감을 자극합니다. 식사 후에는 볶음밥이나 냉면으로 마무리하는 것이 국룰(국민 룰)입니다.
+                    </p>
+
+                    <div class="pro-tip-box">
+                        <span class="pro-tip-title"><i class="bi bi-check-circle-fill"></i> 쌈 싸 먹는 법 (Ssam Culture)</span>
+                        <p class="mb-0">
+                            상추나 깻잎 위에 잘 구운 고기 한 점을 올리고, 쌈장(주황색 양념), 마늘, 파무침을 얹어 한 입 크기로 싸서 드세요. 
+                            다양한 재료가 입안에서 어우러지는 맛의 조화를 느낄 수 있습니다. 
+                        </p>
+                    </div>
                 </article>
 
-                <article class="mb-5">
-                    <h2 class="mb-3">비빔밥: 한 그릇의 완벽한 조화</h2>
-                    <p>비빔밥은 "섞은 밥"을 의미하며, 한국 요리의 조화를 상징하는 아름답고 건강한 요리입니다. 따뜻한 흰쌀밥 위에 나물, 고추장, 그리고 종종 날달걀이나 프라이, 얇게 썬 고기를 얹어 제공됩니다. 먹기 전에 모든 재료를 함께 섞어 한 입마다 완벽한 맛과 식감의 조화를 만들어냅니다. 건강하고 믿을 수 없을 만큼 만족스러운 식사입니다.</p>
+                <!-- Article 3: Bibimbap -->
+                <article id="bibimbap">
+                    <h2>3. 비빔밥 (Bibimbap): 그릇 속의 조화</h2>
+                    <img src="https://images.unsplash.com/photo-1590301157890-4810ed352733?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80" alt="전주 비빔밥">
+                    <p>
+                        '섞다'라는 의미의 비빔밥은 건강과 맛, 그리고 시각적인 아름다움까지 모두 잡은 요리입니다. 
+                        흰 밥 위에 색색의 나물(채소), 고기, 계란 프라이를 얹고 고추장과 참기름을 넣어 비벼 먹습니다.
+                    </p>
+                    <p>
+                        전주 비빔밥이 가장 유명하지만, 뜨거운 돌그릇에 담겨 나와 밥이 눌어붙는 '돌솥비빔밥'도 별미입니다. 
+                        채식을 선호하는 분들에게도 훌륭한 선택이 될 수 있습니다(고기를 빼달라고 요청하세요).
+                    </p>
+
+                    <div class="pro-tip-box">
+                        <span class="pro-tip-title"><i class="bi bi-fire"></i> 돌솥비빔밥 먹는 꿀팁</span>
+                        <p class="mb-0">
+                            돌솥비빔밥이 나오면 바로 비비지 말고 <strong>1~2분 정도 기다리세요.</strong> 
+                            그릇의 열기로 바닥 부분의 밥이 바삭바삭한 '누룽지'가 되어 더욱 고소한 식감을 즐길 수 있습니다.
+                        </p>
+                    </div>
                 </article>
+
             </div>
         </section>
     </main>
 
-    <footer class="bg-dark text-white text-center py-3 mt-5">
+    <footer>
         <div class="container">
-            <p class="mb-0">&copy; 2026 Korea Visit</p>
-            <div class="social-icons mt-3">
-                <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
-                <a href="#" class="text-white me-3"><i class="bi bi-twitter"></i></a>
-                <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
-                <a href="#" class="text-white"><i class="bi bi-youtube"></i></a>
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <h5 class="text-white mb-3">Korea Visit</h5>
+                    <p class="small">한국 여행의 모든 것, 저희와 함께하세요.<br>
+                    본 사이트는 방문객에게 유용한 정보를 제공하기 위해 운영됩니다.</p>
+                    <p class="small">&copy; 2026 Korea Visit. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <div class="mb-3">
+                        <a href="./about.html" class="me-3">소개</a>
+                        <a href="./contact.html" class="me-3">문의하기</a>
+                        <a href="./privacy.html">개인정보처리방침</a>
+                    </div>
+                    <div class="social-icons">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
     <script src="../js/script.js"></script>
 </body>
 </html>

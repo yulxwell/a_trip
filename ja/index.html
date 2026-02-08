@@ -1,130 +1,167 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2823448429732547"
-     crossorigin="anonymous"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2823448429732547" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="韓国旅行のための究極のガイド。現地人がおすすめするグルメ、観光名所、歴史、文化体験などの生きた情報をご確認ください。">
     <meta name="google-adsense-account" content="ca-pub-2823448429732547">
-    <title>韓国訪問</title>
+    <title>韓国訪問 - あなたの完璧な旅行ガイド</title>
+    
+    <!-- Open Graph for Social Sharing -->
+    <meta property="og:title" content="韓国訪問 - あなたの完璧な旅行ガイド">
+    <meta property="og:description" content="韓国の隠れた名所とグルメを発見しましょう。">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1548115184-bc6544d06a58?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80">
+    <meta property="og:type" content="website">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&family=Noto+Sans+JP:wght@400;700&family=Noto+Sans+SC:wght@400;700&family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2823448429732547" crossorigin="anonymous"></script>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
             <div class="container">
-                <a class="navbar-brand" href="../index.html">Korea Visit</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <a class="navbar-brand fw-bold" href="./index.html"><i class="bi bi-airplane-fill me-2"></i>Korea Visit</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="../ko/index.html">한국어</a>
+                        <li class="nav-item"><a class="nav-link active" href="./index.html">ホーム</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="catDropdown" role="button" data-bs-toggle="dropdown">旅行情報</a>
+                            <ul class="dropdown-menu">
+                                <!-- Japanese basics page not yet created, link to food or create later -->
+                                <li><a class="dropdown-item" href="./food.html"><i class="bi bi-egg-fried me-2"></i>グルメ</a></li>
+                                <li><a class="dropdown-item" href="./attractions.html"><i class="bi bi-camera me-2"></i>観光地</a></li>
+                                <li><a class="dropdown-item" href="./cities.html"><i class="bi bi-buildings me-2"></i>都市</a></li>
+                                <li><a class="dropdown-item" href="./history.html"><i class="bi bi-book me-2"></i>歴史</a></li>
+                                <li><a class="dropdown-item" href="./scenery.html"><i class="bi bi-flower1 me-2"></i>風景</a></li>
+                            </ul>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../index.html">English</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="./index.html">日本語</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../zh/index.html">中文</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./contact.html">お問い合わせ</a>
+                        <li class="nav-item"><a class="nav-link" href="./about.html">紹介</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./contact.html">お問い合わせ</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="langDropdown" role="button" data-bs-toggle="dropdown">日本語</a>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><a class="dropdown-item" href="../ko/index.html">한국어</a></li>
+                                <li><a class="dropdown-item" href="../index.html">English</a></li>
+                                <li><a class="dropdown-item active" href="#">日本語</a></li>
+                                <li><a class="dropdown-item" href="../zh/index.html">中文</a></li>
+                            </ul>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <div class="hero-section text-center text-white py-5" style="background: url('https://images.unsplash.com/photo-1575231904797-40899066601b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80') no-repeat center center; background-size: cover;">
+        
+        <!-- Hero Image -->
+        <div class="hero-section text-center text-white" style="background-image: url('https://images.unsplash.com/photo-1548115184-bc6544d06a58?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');">
             <div class="container">
-                <h1 class="display-4 hero-title">韓国訪問</h1>
-                <p class="lead hero-subtitle">忘れられない経験のためのあなたのガイド</p>
+                <h1 class="hero-title text-white">あなたの韓国旅行、<br>ここから始まります</h1>
+                <p class="lead hero-subtitle fs-4 text-white">現地人が伝える本当の韓国の話と隠れた名所を発見してください。</p>
+                <div class="mt-4">
+                    <a href="./food.html" class="btn btn-primary btn-lg px-4 me-2">旅行準備</a>
+                    <a href="./attractions.html" class="btn btn-outline-light btn-lg px-4">場所を探す</a>
+                </div>
             </div>
         </div>
     </header>
 
-    <main class="container my-5">
-        <section class="row">
+    <main class="container">
+        <!-- Introduction Section -->
+        <section class="row py-5">
             <div class="col-lg-8 mx-auto text-center">
-                <h2 class="mb-4">あなたの真の韓国旅行は、ここから始まります</h2>
-                <p class="lead">ようこそ！ここは単なる旅行情報サイトではありません。私たちは、賑やかな都市の風景から静かな自然まで、韓国の真の魅力を発見するためのお手伝いをするあなたの個人ガイドです。私たちの目標は、一般的な観光地を超えた、ユニークで質の高い情報を提供することです。</p>
-                <p>2年間のAirbnbでの国際的なゲストのホスティング経験を含む、長年の現地経験に基づき、忘れられない旅行を計画できるよう、率直なアドバイスと厳選されたコンテンツを提供します。最高の地元のレストランを探訪したいグルメな方、隠された物語を発見したい歴史愛好家、または最新のトレンドを追うK-Popファンの方、どなたにもぴったりの場所です。あなたの夢の韓国旅行を一緒に作り上げましょう。</p>
+                <span class="badge bg-primary mb-2">Welcome</span>
+                <h2 class="mb-4 fw-bold">最も韓国らしい瞬間に出会う</h2>
+                <p class="lead text-muted">インターネットに溢れるありふれた情報ではありません。私たちは韓国の深い歴史から最新トレンド、そして地元の人だけが知るグルメ路地まで、生き生きとお伝えします。あなたの旅行が単なる「訪問」ではなく、忘れられない「思い出」になるようお手伝いします。</p>
             </div>
         </section>
 
-        <section class="mt-5 text-center">
-            <h2 class="mb-4">韓国訪問を 위한理由</h2>
+        <!-- Categories Section -->
+        <section class="mb-5">
+            <h3 class="text-center mb-5 fw-bold">テーマ別旅行ガイド</h3>
             <div class="row g-4">
                 <div class="col-md-3">
-                    <div class="p-3 border bg-light h-100">
-                        <i class="bi bi-egg-fried fs-1 text-primary"></i>
-                        <h5 class="mt-3">美味しい料理</h5>
-                        <p>韓国料理の独特の味を楽しみましょう。</p>
-                    </div>
+                    <a href="./food.html" class="text-decoration-none text-dark">
+                        <div class="card h-100 text-center py-4 px-3 border-0 bg-light">
+                            <div class="mb-3 text-primary"><i class="bi bi-egg-fried" style="font-size: 3rem;"></i></div>
+                            <h5 class="fw-bold">グルメ旅行</h5>
+                            <p class="text-muted small">キムチから屋台料理まで、韓国の味を探検しましょう。</p>
+                        </div>
+                    </a>
                 </div>
                 <div class="col-md-3">
-                    <div class="p-3 border bg-light h-100">
-                        <i class="bi bi-bank fs-1 text-success"></i>
-                        <h5 class="mt-3">豊かな歴史</h5>
-                        <p>古代の宮殿や伝統的な村を探索しましょう。</p>
-                    </div>
+                    <a href="./history.html" class="text-decoration-none text-dark">
+                        <div class="card h-100 text-center py-4 px-3 border-0 bg-light">
+                            <div class="mb-3 text-success"><i class="bi bi-bank" style="font-size: 3rem;"></i></div>
+                            <h5 class="fw-bold">歴史散歩</h5>
+                            <p class="text-muted small">千年の時を刻む古宮と文化遺産に出会います。</p>
+                        </div>
+                    </a>
                 </div>
                 <div class="col-md-3">
-                    <div class="p-3 border bg-light h-100">
-                        <i class="bi bi-building fs-1 text-danger"></i>
-                        <h5 class="mt-3">活気ある都市</h5>
-                        <p>ソウルと釜山のダイナミックなエネルギーを体験しましょう。</p>
-                    </div>
+                    <a href="./cities.html" class="text-decoration-none text-dark">
+                        <div class="card h-100 text-center py-4 px-3 border-0 bg-light">
+                            <div class="mb-3 text-danger"><i class="bi bi-building" style="font-size: 3rem;"></i></div>
+                            <h5 class="fw-bold">都市探訪</h5>
+                            <p class="text-muted small">眠らない都市、ソウルと釜山のエネルギーを感じてください。</p>
+                        </div>
+                    </a>
                 </div>
                 <div class="col-md-3">
-                    <div class="p-3 border bg-light h-100">
-                        <i class="bi bi-flower1 fs-1 text-info"></i>
-                        <h5 class="mt-3">美しい景色</h5>
-                        <p>絵のように美しい山々と海岸の景色を発見しましょう。</p>
-                    </div>
+                    <a href="./scenery.html" class="text-decoration-none text-dark">
+                        <div class="card h-100 text-center py-4 px-3 border-0 bg-light">
+                            <div class="mb-3 text-info"><i class="bi bi-flower1" style="font-size: 3rem;"></i></div>
+                            <h5 class="fw-bold">自然ヒーリング</h5>
+                            <p class="text-muted small">済州島の海と雪岳山の紅葉を楽しんでください。</p>
+                        </div>
+                    </a>
                 </div>
             </div>
         </section>
 
-        <section class="mt-5">
-            <h2 class="text-center mb-4">最新トレンド & 更新情報</h2>
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        <!-- Featured Articles -->
+        <section class="py-5">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h3 class="fw-bold m-0">🔥 今話題の韓国旅行トレンド</h3>
+                <a href="#" class="btn btn-sm btn-outline-secondary">もっと見る</a>
+            </div>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
                 <div class="col">
                     <div class="card h-100">
-                        <img src="https://via.placeholder.com/400x200?text=K-Pop+Concert" class="card-img-top" alt="K-Pop Concert">
+                        <img src="https://images.unsplash.com/photo-1459749411177-0473ef485097?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="K-Pop Concert">
                         <div class="card-body">
-                            <h5 class="card-title">K-Popコンサート情報</h5>
-                            <p class="card-text">開催予定のK-Popコンサートスケジュールとチケット予約の詳細をご確認ください。最新のK-Popトレンドを体験するチャンス！</p>
-                            <a href="#" class="btn btn-primary">続きを読む</a>
+                            <span class="badge bg-danger mb-2">Entertainment</span>
+                            <h5 class="card-title fw-bold">2026 K-Popコンサートガイド</h5>
+                            <p class="card-text text-muted">好きなアイドルを目の前で！チケット予約のコツから会場周辺の楽しみ方まで完璧整理。</p>
+                            <a href="#" class="stretched-link"></a>
                         </div>
                     </div>
                 </div>
                 <div class="col">
                     <div class="card h-100">
-                        <img src="https://via.placeholder.com/400x200?text=Traditional+Market" class="card-img-top" alt="Traditional Market">
+                        <img src="https://images.unsplash.com/photo-1580651315530-69c8e0026377?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Traditional Market">
                         <div class="card-body">
-                            <h5 class="card-title">韓国の伝統市場を探索</h5>
-                            <p class="card-text">活気あふれる韓国の伝統市場で、地元の文化を体験し、美味しい屋台料理を味わってください。</p>
-                            <a href="#" class="btn btn-primary">続きを読む</a>
+                            <span class="badge bg-warning text-dark mb-2">Food & Culture</span>
+                            <h5 class="card-title fw-bold">広蔵市場の隠れた名店</h5>
+                            <p class="card-text text-muted">ピンデトック、ユッケ、麻薬キンパ... 地元の人が並んで食べる本当のグルメリストを公開。</p>
+                            <a href="#" class="stretched-link"></a>
                         </div>
                     </div>
                 </div>
                 <div class="col">
                     <div class="card h-100">
-                        <img src="https://via.placeholder.com/400x200?text=New+Cafe" class="card-img-top" alt="New Cafe">
+                        <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Cafe Street">
                         <div class="card-body">
-                            <h5 class="card-title">流行のカフェストリート</h5>
-                            <p class="card-text">ソウルの新しいホットスポット！独特の雰囲気と特別なメニューを誇るカフェをご紹介します。</p>
-                            <a href="#" class="btn btn-primary">続きを読む</a>
+                            <span class="badge bg-info text-dark mb-2">Lifestyle</span>
+                            <h5 class="card-title fw-bold">ソウルのおしゃれカフェ通りTOP3</h5>
+                            <p class="card-text text-muted">聖水洞、延南洞、漢南洞。インスタ映え間違いなしのカフェとデザートツアーコース。</p>
+                            <a href="#" class="stretched-link"></a>
                         </div>
                     </div>
                 </div>
@@ -132,19 +169,32 @@
         </section>
     </main>
 
-    <footer class="bg-dark text-white text-center py-3 mt-5">
+    <footer>
         <div class="container">
-            <p class="mb-0">&copy; 2026 Korea Visit</p>
-            <div class="social-icons mt-3">
-                <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
-                <a href="#" class="text-white me-3"><i class="bi bi-twitter"></i></a>
-                <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
-                <a href="#" class="text-white"><i class="bi bi-youtube"></i></a>
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <h5 class="text-white mb-3">Korea Visit</h5>
+                    <p class="small">韓国旅行のすべて、私たちと一緒に。<br>
+                    本サイトは訪問者に有益な情報を提供するために運営されています。</p>
+                    <p class="small">&copy; 2026 Korea Visit. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <div class="mb-3">
+                        <a href="./about.html" class="me-3">紹介</a>
+                        <a href="./contact.html" class="me-3">お問い合わせ</a>
+                        <a href="./privacy.html">個人情報処理方針</a>
+                    </div>
+                    <div class="social-icons">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
     <script src="../js/script.js"></script>
 </body>
 </html>

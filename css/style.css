@@ -3,32 +3,42 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #f4f4f4;
+    background-color: #f8f9fa; /* Slightly lighter background */
     color: #333;
+    line-height: 1.6; /* Improved readability */
 }
 
-html[lang="ko"] body {
-    font-family: 'Noto Sans KR', 'Noto Sans', sans-serif;
+html[lang="ko"] body { font-family: 'Noto Sans KR', 'Noto Sans', sans-serif; }
+html[lang="ja"] body { font-family: 'Noto Sans JP', 'Noto Sans', sans-serif; }
+html[lang="zh"] body { font-family: 'Noto Sans SC', 'Noto Sans', sans-serif; }
+
+/* Typography improvements */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #2c3e50;
 }
 
-html[lang="ja"] body {
-    font-family: 'Noto Sans JP', 'Noto Sans', sans-serif;
+p {
+    margin-bottom: 1.5rem;
+    font-size: 1.05rem; /* Slightly larger text */
+    color: #4a4a4a;
 }
 
-html[lang="zh"] body {
-    font-family: 'Noto Sans SC', 'Noto Sans', sans-serif;
+/* Header & Hero */
+.navbar {
+    box-shadow: 0 2px 4px rgba(0,0,0,.08);
 }
-
-/* Bootstrap navbar replaces custom header/nav styling */
 
 .hero-section {
-    min-height: 450px; /* Slightly increased height */
+    min-height: 500px;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-    overflow: hidden;
-    background-position: center center !important; /* Ensure image is centered */
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 2rem;
 }
 
 .hero-section::before {
@@ -38,73 +48,125 @@ html[lang="zh"] body {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5); /* Darker overlay for better text readability */
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.6)); /* Gradient overlay */
     z-index: 1;
 }
 
 .hero-section .container {
     position: relative;
     z-index: 2;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
 }
 
-/* Hero text animation */
+.hero-title {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    letter-spacing: -1px;
+}
+
+/* Animations */
 .hero-title, .hero-subtitle {
     opacity: 0;
-    animation: fadeIn 1.5s ease-out forwards;
+    animation: fadeInUp 1s ease-out forwards;
+}
+.hero-subtitle { animation-delay: 0.3s; }
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
-.hero-subtitle {
-    animation-delay: 0.5s; /* Delay subtitle animation */
+/* Main Content Area */
+main.container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    margin-top: -50px; /* Overlap effect with hero */
+    position: relative;
+    z-index: 10;
 }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* Card hover effect */
+/* Card Improvements */
 .card {
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
 }
 
 .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.15);
 }
 
-main {
-    padding: 20px 0; /* Adjust padding for Bootstrap containers */
-    max-width: none; /* Let Bootstrap container handle max-width */
-    margin: 20px auto;
-    background-color: #fff;
+.card-img-top {
+    height: 220px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.card:hover .card-img-top {
+    transform: scale(1.05);
+}
+
+/* Article Styling (for Food, History pages) */
+article {
+    background: #fff;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 12px;
+    border: 1px solid #eee;
+}
+
+article h2 {
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+    display: inline-block;
+    margin-bottom: 1.5rem;
+}
+
+article img {
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-footer {
-    text-align: center;
-    padding: 1rem 0;
-    background-color: #333;
-    color: #fff;
-    /* Removed position: fixed to allow natural document flow */
+    margin-bottom: 1.5rem;
     width: 100%;
+    max-height: 400px;
+    object-fit: cover;
 }
 
-/* Social media icons in footer */
+/* Utility Features */
+.pro-tip-box {
+    background-color: #e8f4fd;
+    border-left: 5px solid #2196f3;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 4px;
+}
+
+.pro-tip-title {
+    font-weight: bold;
+    color: #0d47a1;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+/* Footer */
+footer {
+    background-color: #212529;
+    color: #aaa;
+    padding: 3rem 0;
+    margin-top: 4rem;
+}
+
+footer a { color: #fff; text-decoration: none; }
+footer a:hover { text-decoration: underline; color: #fff; }
+
 .social-icons a {
-    color: #fff;
     font-size: 1.5rem;
-    margin: 0 10px;
-    text-decoration: none;
-    transition: color 0.3s ease-in-out;
+    margin: 0 12px;
+    color: #aaa;
 }
-
-.social-icons a:hover {
-    color: #007bff; /* Example hover color */
-}
+.social-icons a:hover { color: #fff; }
